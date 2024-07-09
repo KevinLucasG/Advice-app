@@ -6,30 +6,42 @@
 
 .container {
   display: flex;
+  gap: 20px;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   justify-content: center;
+  place-items: center;
+  background-color: #252222;
 }
 
 .container-advice {
   width: 600px;
-  height: 500px;
+  height: 400px;
   background-color: rgb(40, 40, 221);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#advice-text {
-  margin-top: 25%;
-  text-align: center;
-  color: #fff;
   font-size: 25px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: #7e7878;
+}
+#advice-text {
+  margin-top: 20%;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  width: 450px;
 }
 #btn-language {
-  width: 120px;
-  height: 60px;
+  width: 160px;
+  height: 50px;
+  place-items: center;
+  background-color: red;
+  border: #ff0000;
+  border-radius: 10px;
+  font-size: 20px;
 }
 #btn-advice {
   position: relative;
@@ -41,4 +53,10 @@
   border-color: rgb(3, 32, 75);
   color: #fff;
   font-size: 15px;
+}
+
+#btn-advice:active {
+  background-color: rgb(34, 99, 197);
+  border-color: rgb(34, 99, 197);
+  color: #ff0000;
 }
